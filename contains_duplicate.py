@@ -8,3 +8,6 @@ def hasDuplicate(nums):
         seen.add(num)
 
     return False
+
+#Time O(N)
+#Space O(N)

@@ -1,8 +1,11 @@
-def height(root):
-    if not root:
-        return 0
+def treesEqual(p, q):
+    if not p and not q:
+        return True
+    
+    if not p or not q or p.val != q.val:
+        return False
+    
+    return treesEqual(p.left, q.left) and treesEqual(p.right, q.right)
 
-    return 1 + max(height(root.left), height(root.right))
-
-    #Time O(N)
-    #Space O(N)
+    #Time O(min(m,n))
+    #Space O(min(m, n))

@@ -22,7 +22,7 @@ visited = set()
 
 def numNodes(node):
     if node in visited:
-            return 0
+      return 0
         
     visited.add(node)
 

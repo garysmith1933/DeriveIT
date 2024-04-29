@@ -20,6 +20,6 @@ def saveSeaWorld(height):
             reachable(river, m - 1, col)
     
     return [
-        [r,c] for r in range(m) for c in range(n) if river[r][c] and bay[r][c]
+        [r,c] for r in range(m) for c in range(n) if river[r][c] and bay[r][c] # if the position is true in boy the river board and the bay board, its true
     ]
     

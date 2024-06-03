@@ -1,10 +1,10 @@
 def maxSubarrayProduct(nums):
-    maxProd = arr[0]
-    minProd = arr[0]
+    maxProd = nums[0]
+    minProd = nums[0]
     maxSeen = maxProd
 
-    for in range(1, len(arr)):
-        curr = arr[i]
+    for i in range(1, len(nums)):
+        curr = nums[i]
 
         maxProd, minProd = (
             max(maxProd*curr, minProd*curr, curr),

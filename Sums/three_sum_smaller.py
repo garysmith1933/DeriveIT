@@ -23,5 +23,5 @@ def threeSumSmaller(arr, target):
             
     return largest
 
-# Time O(N*2)
+# Time O(N**2)
 # Space O(1)
